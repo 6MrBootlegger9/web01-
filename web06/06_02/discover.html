@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>卍Oo乂煞氣aDiscover乂oO卐</title>
+</head>
+<body>
+<!--linear-gradient-->
+	<div class="div3"></div>
+<!--Navbar-->
+    <div style="display: flex; flex-direction: column; width: 100px; position: absolute;">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="discover.html" class="a">Discover</a>
+        <a href="tickets.html">Tickets</a>
+    </div>
+  <!--Collapse-->
+  <main>
+    <div class="event container p-3 border border-right-0 border-top-0">
+      <div style="display:inline-block;">
+        <img src="./img/Carousel1.jpg" alt=""
+          style=" display:inline-block; width:500px; border:none;">
+      </div>
+      <div style="display:inline-block;width:600px">
+        <h2 style="color:rgb(255, 255, 255);">設計展資訊區</h2>
+        <div style="color:rgb(255, 255, 255);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit iusto sint sapiente itaque
+          praesentium voluptatibus distinctio quidem animi, minima odio sequi. Dolorem enim, eius eligendi
+          necessitatibus maiores quasi minus!</div>
+
+      </div>
+    </div>
+    <div class="show-list container p-3 border border-left-0 border-top-0 border-bottom-0">
+      <div class="d-inline-block w-50">
+        <h2 style="color:rgb(255, 255, 255);">作品介紹區</h2>
+
+        <div style="color:rgb(255, 255, 255);"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. At rem assumenda libero perferendis, saepe
+          exercitationem dicta odit ex tempore velit fuga quas molestiae aliquam earum obcaecati natus ratione
+          reprehenderit modi.</div>
+        <div class="collapse" id="readMore" style="color:rgb(255, 255, 255);">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi, ullam qui iusto nulla aspernatur?
+          Aliquam, eos. Nisi beatae quam in, error amet voluptatum obcaecati dolor facilis molestiae nulla explicabo.
+        </div>
+        <button class="btn btn-primary t" style="background-color: rgb(0, 80, 160); border: none; box-shadow: 0 4px 8px 0 rgb(0, 80, 160); color: white;" data-toggle="collapse"
+          data-target="#readMore" aria-controls="readMore" id="btn1">Read More</button>
+        <div class="collapse" id="readmore" style="color:rgb(255, 255, 255);">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus, corporis dicta velit inventore rem fuga dolorum nam qui cum tenetur doloremque assumenda. Veritatis, inventore provident? Voluptates quo eos non.
+        </div>
+        <button class="btn btn-primary t" style="background-color: rgb(0, 80, 160); border: none; box-shadow: 0 4px 8px 0 rgb(0, 80, 160); color: white;" data-toggle="collapse"
+          data-target="#readmore" aria-controls="readMore" id="btn2">Read more</button>
+      </div>
+          <img src="./img/Carousel2.jpg" alt=""
+          style="display:inline-block;width:500px;border:none" class="position-absolute">
+    </div>
+  </main>
+<!--Footer-->
+<img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="">
+<img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="">
+<footer class="fixed-bottom text-center" style="color: white;">Copyright © 2023 YODEX All Rights Reserved</footer>
+<!--Scr-->
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+<!--More to Less-->
+<script>
+  $("#readMore").on('show.bs.collapse', () => {
+    $("#btn1").text("Read less");
+  })
+  $("#readMore").on('hide.bs.collapse', () => {
+    $("#btn1").text("Read More");
+  })
+  $("#readmore").on('show.bs.collapse', () => {
+    $("#btn2").text("Read less");
+  })
+  $("#readmore").on('hide.bs.collapse', () => {
+    $("#btn2").text("Read more");
+  })
+</script>
+</body>
+</html>

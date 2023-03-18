@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>卍Oo乂煞氣aTickets乂oO卐</title>
+</head>
+<body>
+<!--linear-gradient-->
+	<div class="div4"></div>
+<!--Navbar-->
+    <div style="display: flex; flex-direction: column; width: 100px; position: absolute;">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="discover.html">Discover</a>
+        <a href="tickets.html" class="a">Tickets</a>
+    </div>
+<!--Ticketfrom-->
+<div class="center">
+    <h1 style="text-align: center; margin-top: 100px; color: rgb(172, 175, 135);">Tickets</h1>
+    <form action="tickets.php" method="post" id="form" class="ticketform" style="display: flex; justify-content: center;">
+        <input type="text" class="newinput" name="first_name" id="first_name" placeholder="名字(First name)" required onkeyup="value=value.replace(/\\/g,'按屁喔')">
+        <input type="text" class="newinput" name="last_name" id="last_name" placeholder="姓氏(Last name)" required onkeyup="value=value.replace(/\\/g,'按屁喔')">
+        <input type="text" class="newinput" name="phone" id="phone" placeholder="手機號碼(Phone)" required onkeyup="value=value.replace(/\\/g,'按屁喔')">
+        <input type="password" class="newinput" name="password" id="password" placeholder="會員密碼(Password)" required onkeyup="value=value.replace(/\\/g,'按屁喔')">
+        <span class="veri col-1" style="font-size:40px; font-family: Papyrus; user-select: none;"></span>
+        <input type="text" class="newinput " name="veri" id="captcha" placeholder="數字驗證(Verification)" required onkeyup="value=value.replace(/\\/g,'按屁喔')">
+        <input type="submit" value="送出按鈕(Submit)" style="box-shadow: 0 4px 8px 0 black; color: white;background-color: rgb(0, 80, 160);">
+    </form>
+</div>
+<!--Footer-->
+<img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="">
+<img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="">
+<footer class="fixed-bottom text-center" style="color: white;">Copyright © 2023 YODEX All Rights Reserved</footer>
+<!--Scr-->
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+</body>
+</html>
